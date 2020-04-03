@@ -1,0 +1,25 @@
+@import "./vendor/normalize";
+
+.container {
+    display: grid;
+    text-align: center;
+  }
+  
+  h1 {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
+  
+  button {
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
+  
+  p {
+    grid-row-start: 2;
+    grid-row-end: 3;;
+  }

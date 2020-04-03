@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ryan's doodle generator">
+    <title>Ryan's doodle generator</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+
+    <script type="text/javascript" src="js/main.js"></script>
+
+    <div class="container">
+        <h1>Ryan's Drawing Prompt</h1>
+        <button onclick="document.getElementById('promptColor').innerHTML =
+                       doodleColor(randomColor);     document.getElementById('randomSubject').innerHTML =
+                       doodlePrompt(myArray);
+                       document.getElementById('promptAction').innerHTML =
+                       doodleAction(randomAction);">Click Me</button>
+      
+        <p id="promptAction"></p>
+        <p id="promptColor"></p>
+        <p id="randomSubject"></p>
+      </div>
+
+    
+
+</body>
+</html>
