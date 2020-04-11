@@ -6,25 +6,27 @@
     <meta name="description" content="Ryan's doodle generator">
     <title>Ryan's doodle generator</title>
     <link rel="stylesheet" href="styles/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 <body>
-
-    <script type="text/javascript" src="js/main.js"></script>
-
     <div class="container">
-        <h1>Ryan's Drawing Prompt</h1>
-        <button onclick="document.getElementById('promptColor').innerHTML =
-                       doodleColor(randomColor);     document.getElementById('randomSubject').innerHTML =
-                       doodlePrompt(myArray);
-                       document.getElementById('promptAction').innerHTML =
-                       doodleAction(randomAction);">Click Me</button>
-      
-        <p id="promptAction"></p>
-        <p id="promptColor"></p>
-        <p id="randomSubject"></p>
-      </div>
-
-    
-
+        <script type="text/javascript" src="js/main.js"></script>
+        <script type="text/javascript" src="js/jquery.js"></script>
+        <header>
+            <h1>Doodle Prompt</h1>
+        </header>
+        <div class="credits">by Ryan Carranco</div>
+        <div class="main">
+            <p id="promptAction"></p>
+            <p id="promptColor"></p>
+            <p id="randomSubject"></p>
+            <a class="button" onclick="document.getElementById('promptColor').innerHTML = doodleColor(randomColor);
+                            document.getElementById('randomSubject').innerHTML = doodlePrompt(myArray);
+                            document.getElementById('promptAction').innerHTML = doodleAction(randomAction);">
+                
+                Click Me </a>
+        </div>
+    </div>
 </body>
 </html>
